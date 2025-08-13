@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Readable Web Page</title>
+    <!-- Meta tags for SEO and accessibility -->
+    <meta name="description" content="A beginner-friendly, accessible, and SEO-optimized web page using HTML5 semantic tags.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ARIA landmark roles for screen readers -->
+    <meta name="robots" content="index, follow">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2em;
+        background: #f9f9f9;
+        color: #222;
+      }
+      header, main, footer {
+        margin-bottom: 1.5em;
+      }
+      h1 {
+        color: #0057b8;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav li {
+        display: inline;
+        margin-right: 1em;
+      }
+      a:focus {
+        outline: 2px solid #0057b8;
+      }
+    </style>
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Readable Web Page</h1>
+      <!-- Navigation with ARIA label for accessibility -->
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          This page demonstrates a well-structured HTML5 layout, optimized for both accessibility and SEO.
+          Semantic tags, ARIA attributes, and descriptive content help screen readers and search engines understand the page.
+        </p>
+      </section>
+      <section id="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">Features</h2>
+        <ul>
+          <li>Semantic HTML5 elements (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+          <li>Accessible navigation with <code>aria-label</code></li>
+          <li>Descriptive meta tags for SEO</li>
+          <li>Clear structure and indentation</li>
+          <li>Keyboard focus styles for links</li>
+        </ul>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Readable Web Page</p>
